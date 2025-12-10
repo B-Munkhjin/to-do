@@ -1,117 +1,120 @@
-*{
-    margin: 0;
-    padding: 0;
-    /* border-style: border-box; */
+* {
+  margin: 0;
+  padding: 0;
+  /* border-style: border-box; */
 }
-.container{
-    display: flex;
-    flex-direction: column;
-    width: 377px;
-    height: fit-content;
-    margin: auto auto;
-    background-color: #FFFFFF;
-    padding-right: 16px;
-    padding-left: 16px;
-    padding-top: 24px;
-    padding-bottom: 24px;   
-    gap: 20px;
-    border-radius: 10px;
-   box-shadow: 0px 0px 12px 0px #00000029;
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 377px;
+  height: fit-content;
+  margin: auto auto;
+  background-color: #ffffff;
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 12px 0px #00000029;
 }
-.inter{
-    font-family: Inter, sans-serif;
+.inter {
+  font-family: Inter, sans-serif;
 }
-.head{
-    width: 345px;
-    height: 28px;
-    font-size: 20px;
-    line-height: 28px;
-    display: flex;
-    justify-content: center;
+.head {
+  width: 345px;
+  height: 28px;
+  font-size: 20px;
+  line-height: 28px;
+  display: flex;
+  justify-content: center;
 }
-.newTask{
-    width: 345px;
-    height: 38px;
-    display: flex;
-    gap: 6px;
-    justify-content: center;
-    align-items: center;
+.newTask {
+  width: 345px;
+  height: 38px;
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
 }
-.text{
-    display: flex;
-    justify-content: space-between;
-    width: 280px;
-    height: 36px;
-    font-size: 14px;
-    border-color: #71717A;
-    border-radius: 6px;
-    padding-left: 8px;
+.text {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  height: 36px;
+  font-size: 14px;
+  border-color: #71717a;
+  border-radius: 6px;
+  padding-left: 8px;
 }
-.add{
-    width: 59px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    height: 40px;
-    background-color: #3C82F6;
-    color: #F9F9F9;
-    border: 0;
+.add {
+  width: 59px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  height: 40px;
+  background-color: #3c82f6;
+  color: #f9f9f9;
+  border: 0;
 }
-.taskContainer{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.taskContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.taskBox{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #F9FAFB;
-    width: 345px;
-    padding-right: 16px;
-    padding-left: 16px;
-    padding-top: 12px;
-    padding-bottom: 12px;   
-    border-radius: 12px;
-    gap: 10px;
+.taskBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9fafb;
+  width: 345px;
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 12px;
+  gap: 10px;
 }
-.taskText{
-    width:275px ;
-    height: fit-content;
-    word-wrap: break-word;
-    white-space: normal;
+.taskText {
+  width: 275px;
+  height: fit-content;
+  word-wrap: break-word;
+  white-space: normal;
 }
-.empty{
-    width: 345px;
-    height: 17px;
-    font-size: 14px;
-    font-weight: 400;
-    color: #6B7280;
-    text-align: center;
+.empty {
+  width: 345px;
+  height: 17px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6b7280;
+  text-align: center;
 }
-.types{
-    display: flex;
-    gap: 8px;
-    font-size: 12px;
+.types {
+  display: flex;
+  gap: 8px;
+  font-size: 12px;
 }
-.all{
-    width: 38px;
-    height: 32px;
-    background-color: #F3F4F6;
-    color: #363636;
+.all {
+  width: 38px;
+  height: 32px;
 }
-.active{
-    width: 60px;
-    height: 32px;
-    background-color: #F3F4F6;
-    color: #363636;
+.color {
+  background-color: #f3f4f6;
+  color: #363636;
 }
-.completed{
-    width: 87px;
-    height: 32px;
-    background-color: #F3F4F6;
-    color: #363636;
+
+color:active {
+  background-color: #3c82f6;
+  color: #f9f9f9;
+}
+.active {
+  width: 60px;
+  height: 32px;
+}
+.completed {
+  width: 87px;
+  height: 32px;
 }
 /* .delete{
     width: 67px;
