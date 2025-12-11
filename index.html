@@ -17,12 +17,21 @@
             <button class="inter add" id="add">Add</button>
         </div>
         <div class="types inter">
-            <button class="add all color" id="all" onclick="category">All</button>
-            <button class="add active color" id="active" onclick="category">Active</button>
-            <button class="add completed color" id="completed" onclick="category">Completed</button>
+            <button class="add all active-color color" id="all" onclick="category('All')"> All</button>
+            <button class="add active1 color" id="active" onclick="category('Active')">Active</button>
+            <button class="add completed color" id="completed" onclick="category('Completed')">Completed</button>
         </div>
         <div class="taskContainer" id="taskContainer">
             <div class="empty inter">No tasks yet. Add one above!</div>
+        </div>
+        <div class="count-clear">
+            <div id="count" class="count inter"></div>
+            <!-- clear completed zasna -->
+            <div id="clearCompleted"></div>
+        </div>
+        <div class="pinecone ">
+            <div class="powered inter">Powered by</div>
+            <div class="tsenher inter">Pinecone academy</div>
         </div>
     </div>
     <script src=" ./todo.js"></script>
