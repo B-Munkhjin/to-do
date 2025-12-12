@@ -61,8 +61,11 @@ const yesNo = (taskId) => {
   renderTasks(tasks);
   updateCounter();
 };
-// clear completed zasna XXXXXXXXXXXXXXXXXX //
 const clearCompleted = () => {
+  const hariu = confirm("Are you sure you want to clear all completed tasks?");
+  if (!hariu) {
+    return;
+  }
   tasks = tasks.filter((task) => !task.isComplete);
   renderTasks(tasks);
   updateCounter();
@@ -70,8 +73,9 @@ const clearCompleted = () => {
 function updateCounter() {
   const total = tasks.length;
   const completed = tasks.filter((task) => task.isComplete).length;
-  count.innerHTML = `${completed} of ${total} tasks completed <button id="clearCompleted" class="clear">Clear  Completed</button>`;
+  count.innerHTML = ` <div class="bottom-line"></div>    ${completed} of ${total} tasks completed <button id="clearCompleted" class="clear" onclick="clearCompleted()">Clear  Completed</button>`;
 }
+
 const category = (categoryValue) => {
   if (categoryValue === "Active") {
     const categoryTasks = tasks.filter((task) => {
@@ -98,8 +102,12 @@ const category = (categoryValue) => {
   }
 };
 
-///////delete- eventListener ajillahgui XXXXXXXXXXXXXXXXXX
 const deleted = (taskId) => {
+  const answer = confirm("Are you sure you want to delete this task?");
+  if (!answer) {
+    return;
+  }
+
   tasks = tasks.filter((task) => {
     if (task.id === taskId) {
       return false;
@@ -130,4 +138,3 @@ completedBtn.addEventListener("click", () => {
   allBtn.classList.remove("active-color");
   activeBtn.classList.remove("active-color");
 });
-clearBtn.addEventListener("click", clearCompleted);
