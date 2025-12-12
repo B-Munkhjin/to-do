@@ -135,8 +135,6 @@
 }
 .count-clear {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 .count {
   font-size: 14px;
@@ -149,7 +147,7 @@
   color: #ef4444;
   background-color: #ffffff;
   border: #ffffff;
-  margin-left: 121px;
+  margin-left: 30%;
 }
 .pinecone {
   display: flex;
